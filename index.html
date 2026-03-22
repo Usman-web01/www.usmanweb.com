@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="google-site-verification" content="OXGKIqNzVZKGqL0Gx-e4SjibgeGMJy75oUzkUs_rLQQ" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Usman Digital Services</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #000;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            background: #000;
+            padding: 10px;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            background: #222;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        nav button:hover {
+            background: #00c3ff;
+        }
+
+        .section {
+            display: none;
+            padding: 40px;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .slider {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .active-slide {
+            opacity: 1;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .cards img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .cards img:hover {
+            transform: scale(1.1);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .btn {
+            background: #00c3ff;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        footer {
+            text-align: center;
+            background: #111;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Usman Digital Services</h1>
+
+        <p>Graphics • Data Entry • Website Development</p>
+
+    </header>
+
+    <nav>
+
+        <button onclick="show('home')">Home</button>
+        <button onclick="show('graphics')">Graphics</button>
+        <button onclick="show('data')">Data Entry</button>
+        <button onclick="show('web')">Websites</button>
+        <button onclick="show('sale')">Website Sale</button>
+        <button onclick="show('affiliate')">Affiliate</button>
+
+    </nav>
+
+    <!-- HOME -->
+
+    <section id="home" class="section active">
+
+        <div class="slider">
+
+            <div class="slide active-slide">
+                <img src="my pic 1 front.jpeg">
+            </div>
+
+            <div class="slide">
+                <img src="front 2.jpeg">
+            </div>
+
+            <div class="slide">
+                <img src="fron 3.png">
+            </div>
+
+            <div class="slide">
+                <img src="front 4.jpg">
+            </div>
+
+        </div>
+
+        <div class="contact">
+
+            <a class="btn" href="tel:03308270097">Contact Now</a>
+
+        </div>
+
+    </section>
+
+    <!-- GRAPHICS -->
+
+    <section id="graphics" class="section">
+
+        <h2>Graphics Portfolio</h2>
+
+        <div class="cards">
+
+            <img src="graics pic  (3).jpeg" onclick="openImg(this.src)">
+            <img src="graics pic  (2).jpeg" onclick="openImg(this.src)">
+            <img src="graics pic  (4).jpeg" onclick="openImg(this.src)">
+            <img src="graics pic  (2).jpeg" onclick="openImg(this.src)">
+            <img src="graics pic  (4).jpeg" onclick="openImg(this.src)">
+            <img src="graics pic  (3).jpeg" onclick="openImg(this.src)">
+            <img src="graics pic  (1).jpeg" onclick="openImg(this.src)">
+            <img src="graics pic  (4).jpeg" onclick="openImg(this.src)">
+            <img src="grapic 5 (1).jpeg" onclick="openImg(this.src)">
+            <img src="grapic 5 (1).jpg" onclick="openImg(this.src)">
+            <img src="grapic 5 (1).png" onclick="openImg(this.src)">
+            <img src="grapic 5 (2).jpg" onclick="openImg(this.src)">
+            <img src="grapic 5 (2).jpg" onclick="openImg(this.src)">
+            <img src="grapic 5 (3).jpg" onclick="openImg(this.src)">
+            <img src="graics pic  (3).jpeg" onclick="openImg(this.src)">
+            <img src="grapic 5 (3).jpg" onclick=<img src="grapic 4 (1).jpeg" onclick="openImg(this.src)">
+            <img src="grapic 4 (2).png" onclick="openImg(this.src)">
+            <img src="grapic 4 (7).jpg" onclick="openImg(this.src)">
+            <img src="front 2.jpeg" onclick="openImg(this.src)">
+            <img src="fron 3.png" onclick="openImg(this.src)">
+            <img src="grapic 4 (1).png" onclick="openImg(this.src)">
+            <img src="grapic 4 (3).png" onclick="openImg(this.src)">
+            <img src="grapic 5 (1).jpg" onclick="openImg(this.src)">
+            <img src="grapic 5 (1).jpeg" onclick="openImg(this.src)">
+            <img src="grapic 5 (1).jpg" onclick="openImg(this.src)">
+            <img src="grapic 5 (1).png" onclick="openImg(this.src)">
+            <img src="grapic 5 (2).jpg" onclick="openImg(this.src)">
+            <img src="grapic 5 (2).jpg" onclick="openImg(this.src)">
+            <img src="grapic 5 (3).jpg" onclick="openImg(this.src)">
+            <img src="graics pic  (3).jpeg" onclick="openImg(this.src)">
+            <img src="grapic 5 (3).jpg" onclick=<img src="grapic 5 (3).jpg" onclick="openImg(this.src)">
+        </div>
+
+    </section>
+
+    <!-- DATA ENTRY -->
+
+    <section id="data" class="section">
+
+        <h2>Professional Data Entry Services</h2>
+
+        <!-- First Big Image -->
+
+        <img src="front 4.jpg" style="width:100%;border-radius:10px;margin-bottom:20px;" onclick="openImg(this.src)">
+
+        <!-- Second Big Image -->
+        <p>
+            We provide professional and accurate data entry services for businesses, companies and online stores.
+            Our goal is to manage business data efficiently and deliver high quality results for our clients.
+        </p>
+
+        <h3>Our Data Entry Services</h3>
+
+        <ul>
+
+            <li>Excel Data Entry</li>
+            <li>Copy Paste Work</li>
+            <li>PDF to Excel / Word Conversion</li>
+            <li>Online Data Collection</li>
+            <li>Web Research</li>
+            <li>Product Listing</li>
+
+        </ul>
+
+        <h3>Tips for Accurate Data Entry</h3>
+
+        <p>
+
+            ✔ Always double-check the data before submission.
+            ✔ Keep the data organized in Excel or Google Sheets.
+            ✔ Maintain proper formatting for professional work.
+            ✔ Verify sources when collecting data online.
+
+        </p>
+        <img src="front 4.jpg" style="width:100%;border-radius:10px;margin-bottom:20px;" onclick="openImg(this.src)">
+
+
+        <div class="contact">
+
+            <a class="btn" href="tel:03308270097">Hire Data Entry Expert</a>
+
+        </div>
+
+    </section>
+
+    <!-- WEBSITE PORTFOLIO -->
+
+    <section id="web" class="section">
+
+        <h2>Website Portfolio</h2>
+
+        <div class="cards">
+
+            <img src="blog web 2.webp" onclick="openImg(this.src)">
+            <img src="bunis web pic  1.avif" onclick="openImg(this.src)">
+            <img src="afilate marketing pic 3.jpg" onclick="openImg(this.src)">
+            <img src="web s 1.avif" onclick="openImg(this.src)">
+
+        </div>
+
+    </section>
+
+    <!-- WEBSITE SALE -->
+
+    <section id="sale" class="section">
+
+        <h2>Websites For Sale</h2>
+
+        <div class="cards">
+
+            <div class="card" style="text-align:center;">
+                <img src="web s 1.avif" onclick="openImg(this.src)">
+                <h3>Website 1</h3>
+                <p>$12</p>
+                <a class="btn" href="https://usman-web01.github.io/Muhammad-prohet7861/" target="_blank"
+                    style="padding:6px 12px; font-size:14px;">Buy Now</a>
+            </div>
+
+            <div class="card" style="text-align:center;">
+                <img src="bunis web pic  1.avif" onclick="openImg(this.src)">
+                <h3>Website 2</h3>
+                <p>$15</p>
+                <a class="btn" href="https://usman-web01.github.io/busnius420/" target="_blank"
+                    style="padding:6px 12px; font-size:14px;">Buy Now</a>
+            </div>
+
+            <div class="card" style="text-align:center;">
+                <img src="blog web 2.webp" onclick="openImg(this.src)">
+                <h3>Website 3</h3>
+                <p>$12</p>
+                <a class="btn" href="https://usman-web01.github.io/Muhammad-prohet7861/" target="_blank"
+                    style="padding:6px 12px; font-size:14px;">Buy Now</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AFFILIATE -->
+
+    <section id="affiliate" class="section">
+
+        <h2>Affiliate Products</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://picsum.photos/400/300?201" onclick="openImg(this.src)">
+                <p>Affiliate Product</p>
+                <a class="btn" href="#">View Product</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>Contact: 03308270097</p>
+
+        <p>Email: hafizusmansharazi@gmail.com</p>
+
+    </footer>
+
+    <div id="lightbox" onclick="closeImg()">
+        <img id="lightbox-img">
+    </div>
+
+    <script>
+
+        function show(id) {
+
+            document.querySelectorAll(".section").forEach(
+
+                s => s.classList.remove("active")
+
+            )
+
+            document.getElementById(id).classList.add("active")
+
+        }
+
+        let slides = document.querySelectorAll(".slide")
+
+        let index = 0
+
+        function slider() {
+
+            slides.forEach(s => s.classList.remove("active-slide"))
+
+            index++
+
+            if (index >= slides.length) {
+
+                index = 0
+
+            }
+
+            slides[index].classList.add("active-slide")
+
+        }
+
+        setInterval(slider, 3000)
+
+        function openImg(src) {
+
+            document.getElementById("lightbox").style.display = "flex"
+            document.getElementById("lightbox-img").src = src
+
+        }
+
+        function closeImg() {
+
+            document.getElementById("lightbox").style.display = "none"
+
+        }
+
+    </script>
+
+</body>
+
+</html>
